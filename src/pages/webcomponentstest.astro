@@ -1,0 +1,38 @@
+---
+
+---
+<body>
+<hr/>
+<custom-element>
+    <template shadowroot='open'>
+        i am in shadowroot open
+        <!-- <slot name="my-text">slot in template</slot> -->
+            <slot><h1>i am default slot content</h1></slot>
+    </template>
+</custom-element>
+<br/>
+end
+<hr/>
+<custom-element2>
+    <template shadowroot='closed'>
+        i am in shadowroot close
+        <!-- <slot name="my-text">slot in template</slot> -->
+    </template>
+</custom-element2>
+<br/>
+end
+<hr/>
+<custom-element>
+    <div>커스텀 엘리먼트의 자식요소입니다</div>
+</custom-element>
+</body>
+<!-- <slot name="my-text">My default text</slot> -->
+<!-- Error: __astro_slot encountered an unexpected child: "My default text" -->
+<!-- <slot name="my-text"></slot> -->
+<!-- Error: __astro_slot encountered an unexpected child: undefined -->
+
+<script>
+    const test = '1' ;
+    console.log('hi');
+    
+</script>
