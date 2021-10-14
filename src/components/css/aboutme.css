@@ -1,0 +1,12 @@
+p {
+    font-size:  100px;
+}
+
+.aboutMeWrapper {
+    font-size: 100px;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+}

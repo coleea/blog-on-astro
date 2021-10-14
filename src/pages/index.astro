@@ -33,7 +33,7 @@ const allPosts = Astro.fetchContent('./posts/*.md').
 
         body {
             text-align: center;
-            animation: fadein 1s;
+            animation: fadein 0s;
         }
 
         @keyframes fadein {
@@ -81,16 +81,15 @@ const allPosts = Astro.fetchContent('./posts/*.md').
     <br/>
     <br/>
 
-    <div>
-      <a href='/aboutme'>주인장 소개</a>      
-    </div>
-    <div>
-      <a href='/en'>go english page</a>      
-    </div>
-    <div class="link">
-      <!-- <img src="https://icons.veryicon.com/png/o/business/1688-icon-library/go-to.png" width="60px" />    -->
+    <p>
+      <a href='/aboutme'>주인장 소개</a>
+    </p>
+    <p>
       <a href="https://devkr.info">devkr.info로 가기</a>
-    </div>
+    </p>
+    <p>
+      <a href='/en'>go english page</a>
+    </p>
     <hr/>
     <footer>powered by 
           <svg class="logo astro-RnEq1mMV" height="1em" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"><style type="text/css">
