@@ -65,7 +65,7 @@
         }
     </style><link rel="stylesheet" href="/_astro/common-KeFdj.css" type="text/css"><style type="text/css">astro-root, astro-fragment { display: contents; }</style></head><body><div class="wrapper astro-ldKR6c5M"><img id="logo" src="/icon_blog.png" height="50rem" class="astro-ldKR6c5M"><br class="astro-ldKR6c5M">
     LeeKb의 블로그
-    <hr class="astro-ldKR6c5M"><astro-root uid="Z25L6im"><div class="post-preview-container" data-reactroot=""><article class="post-preview"><style>
+    <hr class="astro-ldKR6c5M"><astro-root uid="1qg1Qz"><div class="post-preview-container" data-reactroot=""><article class="post-preview"><style>
 
                     .post-preview-container {
                         border-radius : 1em ;
@@ -94,36 +94,36 @@
                     a:hover {
                         top: -0.3rem;
                     }
-                </style><header><a href="/posts/astrojs_gettingStarted"><p class="title">[작성중] astro.js로 빌드 &amp; 배포하기</p></a></header><a href="/posts/astrojs_gettingStarted">npm init astro로 빌드하기</a></article></div></astro-root>
+                </style><header><a href="/posts/elixirQnA"><p class="title">엘릭서 FAQ</p></a></header><a href="/posts/elixirQnA">엘릭서에 대해 흔하게 물어보는 질문들과 그 답변들</a></article></div></astro-root>
 <script type="module">
 import setup from '/_astro_frontend/hydrate/load.js';
-setup("Z25L6im", {}, async () => {
+setup("1qg1Qz", {}, async () => {
   
   const [{ default: Component }, { default: hydrate }] = await Promise.all([import("/_astro/src/components/BlogPostPreviewReact.js"), import("/_snowpack/pkg/@astrojs.renderer-react.client.v0.2.0.js")]);
   return (el, children) => hydrate(el)(Component, {
   "post": {
-    "title": "[작성중] astro.js로 빌드 & 배포하기",
-    "description": "npm init astro로 빌드하기",
+    "title": "엘릭서 FAQ",
+    "description": "엘릭서에 대해 흔하게 물어보는 질문들과 그 답변들",
     "astro": {
       "headers": [{
         "depth": 1,
-        "slug": "이-문서는-작성중입니다",
-        "text": "이 문서는 작성중입니다"
+        "slug": "이-페이지는-작성중입니다",
+        "text": "이 페이지는 작성중입니다"
       }, {
         "depth": 1,
-        "slug": "이-문서는-작성중입니다",
-        "text": "이 문서는 작성중입니다"
+        "slug": "이-페이지는-작성중입니다",
+        "text": "이 페이지는 작성중입니다"
       }],
-      "source": "# 이 문서는 작성중입니다\n`npm init astro` 커맨드로 아스트로 프로젝트의 부트스트랩이 생성된다\n# 이 문서는 작성중입니다",
-      "html": "<h1 id=\"이-문서는-작성중입니다\">이 문서는 작성중입니다</h1>\n<p><code>npm init astro</code> 커맨드로 아스트로 프로젝트의 부트스트랩이 생성된다</p>\n<h1 id=\"이-문서는-작성중입니다-1\">이 문서는 작성중입니다</h1>"
+      "source": "\r\n# 이 페이지는 작성중입니다\r\n\r\nQ. 엘릭서가 뭔가?\\\r\nA. 엘릭서는 프로그래밍 언어이다\\\r\n\\\r\nQ. 엘릭서는 누가 만들었나?\\\r\nA. 엘릭서는 호세 발림 (Jose Valim)이 만들었다\\\r\n\\\r\nQ. 호세 발림은 엘릭서를 왜 만들었나?\\\r\nA. 그는 원래 2011년경 레일즈에 대한 책을 출시할 정도로 정통한 레일즈 개발자였다. 그는 2006년 레일즈에 입문했고 2010년에는 레일즈 코어팀 멤버까지 되었다. 그런데 .. 그런 그가 레일즈가 마음에 안들어서 다른 언어를 찾다가 2012년경 아예 자기가 언어를 새로 만들었다\\\r\n\\\r\nQ. 그는 레일즈의 무엇이 마음에 안들었나?\\\r\nA. 레일즈는 그것이 서버로 작동할 때 CPU나 메모리같은 자원을 너무 많이 사용한다. 왜냐? 그건 루비가 스레드를 기반으로 작동하는 언어이기 때문이다. 스레드 모델은 액터기반 모델에 비해 CPU나 메모리사용의 효율성이 낮다. 이건 동시 접속자가 많은 웹 사이트에서는 치명적인 문제다. 이런 상황에선 서버를 증설해야 하고 이건 돈 문제로 이어진다\\\r\n \\\r\nQ. 액터 모델이 뭔가?\\\r\nA. 액터 모델은 일종의 스케줄러이다. 액터 모델을 설명하기 앞서 액터모델 이전의 스케줄링 전략을 살펴보자. 기존의 모델은 스케줄링의 단위가 스레드였다. 하지만 액터 모델에서 스케줄링의 단위는 화이버이다. 이 화이버는 가상 스레드 또는 가벼운 스레드라고도 불리는데 사실 애매한 표현이다. 화이버는 실제로 존재하는 스레드는 아니며 OS에서 관리하지도 않는다. 화이버는 엘릭서에서 독자적으로 관리하는 실행 흐름의 단위이다. 엘릭서는 이 화이버를 기준으로 한 자체 스케줄링 시스템이 있다. 마치 OS에 스레드 스케줄러가 있는 것과 매우 유사하다. 이것을 액터 모델이라고 한다\\\r\n\\\r\nQ. 그러면 엘릭서는 액터기반 모델인가?\\\r\nA. 그렇다. 정확히 말하면 엘릭서가 작동하는 VM인 BEAM이 액터기반 모델이다\\\r\n\\\r\nQ. BEAM이 그것을 해결했으면 BEAM 기반에서 작동하는 얼랭을 쓰면 되는데 왜 굳이 엘릭서를 만드나?\\\r\nA. 얼랭은 문법이 구렸다. 호세 발림은 얼랭이 아닌 BEAM환경이 탐났을 뿐이다\\\r\n\\\r\nQ. 그러면 호세 발림이 엘릭서를 만든건 순전히 기존의 웹서버 환경을 개선하기 위함인가?\\\r\nA. 그렇다고 볼 수 있다\\\r\n\\\r\nQ. 그러면 엘릭서는 서버용 언어인가?\\\r\nA. 애초에 창시자가 서버를 만드는데 관심이 있던 사람이니까 서버를 만들때 편리하게 사용할 수는 있다. 하지만 서버에 국한된 언어는 아니다. 다른 작업도 얼마든지 할 수 있다.\\\r\n\\\r\nQ. 좋다. 그러면 엘릭서는 서버용 프레임워크가 따로 있나?\\\r\nA. 그렇다. 서버에 피닉스 프레임워크를 쓴다\\\r\n\r\n\r\n# 이 페이지는 작성중입니다",
+      "html": "<h1 id=\"이-페이지는-작성중입니다\">이 페이지는 작성중입니다</h1>\n<p>Q. 엘릭서가 뭔가?<br>\nA. 엘릭서는 프로그래밍 언어이다<br>\n<br>\nQ. 엘릭서는 누가 만들었나?<br>\nA. 엘릭서는 호세 발림 (Jose Valim)이 만들었다<br>\n<br>\nQ. 호세 발림은 엘릭서를 왜 만들었나?<br>\nA. 그는 원래 2011년경 레일즈에 대한 책을 출시할 정도로 정통한 레일즈 개발자였다. 그는 2006년 레일즈에 입문했고 2010년에는 레일즈 코어팀 멤버까지 되었다. 그런데 .. 그런 그가 레일즈가 마음에 안들어서 다른 언어를 찾다가 2012년경 아예 자기가 언어를 새로 만들었다<br>\n<br>\nQ. 그는 레일즈의 무엇이 마음에 안들었나?<br>\nA. 레일즈는 그것이 서버로 작동할 때 CPU나 메모리같은 자원을 너무 많이 사용한다. 왜냐? 그건 루비가 스레드를 기반으로 작동하는 언어이기 때문이다. 스레드 모델은 액터기반 모델에 비해 CPU나 메모리사용의 효율성이 낮다. 이건 동시 접속자가 많은 웹 사이트에서는 치명적인 문제다. 이런 상황에선 서버를 증설해야 하고 이건 돈 문제로 이어진다<br>\n<br>\nQ. 액터 모델이 뭔가?<br>\nA. 액터 모델은 일종의 스케줄러이다. 액터 모델을 설명하기 앞서 액터모델 이전의 스케줄링 전략을 살펴보자. 기존의 모델은 스케줄링의 단위가 스레드였다. 하지만 액터 모델에서 스케줄링의 단위는 화이버이다. 이 화이버는 가상 스레드 또는 가벼운 스레드라고도 불리는데 사실 애매한 표현이다. 화이버는 실제로 존재하는 스레드는 아니며 OS에서 관리하지도 않는다. 화이버는 엘릭서에서 독자적으로 관리하는 실행 흐름의 단위이다. 엘릭서는 이 화이버를 기준으로 한 자체 스케줄링 시스템이 있다. 마치 OS에 스레드 스케줄러가 있는 것과 매우 유사하다. 이것을 액터 모델이라고 한다<br>\n<br>\nQ. 그러면 엘릭서는 액터기반 모델인가?<br>\nA. 그렇다. 정확히 말하면 엘릭서가 작동하는 VM인 BEAM이 액터기반 모델이다<br>\n<br>\nQ. BEAM이 그것을 해결했으면 BEAM 기반에서 작동하는 얼랭을 쓰면 되는데 왜 굳이 엘릭서를 만드나?<br>\nA. 얼랭은 문법이 구렸다. 호세 발림은 얼랭이 아닌 BEAM환경이 탐났을 뿐이다<br>\n<br>\nQ. 그러면 호세 발림이 엘릭서를 만든건 순전히 기존의 웹서버 환경을 개선하기 위함인가?<br>\nA. 그렇다고 볼 수 있다<br>\n<br>\nQ. 그러면 엘릭서는 서버용 언어인가?<br>\nA. 애초에 창시자가 서버를 만드는데 관심이 있던 사람이니까 서버를 만들때 편리하게 사용할 수는 있다. 하지만 서버에 국한된 언어는 아니다. 다른 작업도 얼마든지 할 수 있다.<br>\n<br>\nQ. 좋다. 그러면 엘릭서는 서버용 프레임워크가 따로 있나?<br>\nA. 그렇다. 서버에 피닉스 프레임워크를 쓴다\\</p>\n<h1 id=\"이-페이지는-작성중입니다-1\">이 페이지는 작성중입니다</h1>"
     },
-    "url": "/posts/astrojs_gettingStarted",
-    "file": new URL("file:///D:/project/%EB%A6%AC%EB%88%85%EC%8A%A4%ED%8F%B4%EB%8D%94/myblog_astro/src/pages/posts/astrojs_gettingStarted.md")
+    "url": "/posts/elixirQnA",
+    "file": new URL("file:///mnt/mx500-234g/project/%EB%A6%AC%EB%88%85%EC%8A%A4%ED%8F%B4%EB%8D%94/myblog_astro/src/pages/posts/elixirQnA.md")
   }
 }, children);
 
 });
-</script><astro-root uid="2v8FNh"><div class="post-preview-container" data-reactroot=""><article class="post-preview"><style>
+</script><astro-root uid="WC2PR"><div class="post-preview-container" data-reactroot=""><article class="post-preview"><style>
 
                     .post-preview-container {
                         border-radius : 1em ;
@@ -152,89 +152,27 @@ setup("Z25L6im", {}, async () => {
                     a:hover {
                         top: -0.3rem;
                     }
-                </style><header><a href="/posts/test"><p class="title">[작성중] test</p></a></header><a href="/posts/test">test</a></article></div></astro-root>
+                </style><header><a href="/posts/phoenix_qna"><p class="title">피닉스 FAQ</p></a></header><a href="/posts/phoenix_qna">피닉스 프레임워크에 대해 흔하게 물어보는 질문들과 그 답변들</a></article></div></astro-root>
 <script type="module">
 import setup from '/_astro_frontend/hydrate/load.js';
-setup("2v8FNh", {}, async () => {
+setup("WC2PR", {}, async () => {
   
   const [{ default: Component }, { default: hydrate }] = await Promise.all([import("/_astro/src/components/BlogPostPreviewReact.js"), import("/_snowpack/pkg/@astrojs.renderer-react.client.v0.2.0.js")]);
   return (el, children) => hydrate(el)(Component, {
   "post": {
-    "title": "[작성중] test",
-    "description": "test",
+    "title": "피닉스 FAQ",
+    "description": "피닉스 프레임워크에 대해 흔하게 물어보는 질문들과 그 답변들",
     "astro": {
       "headers": [{
-        "depth": 1,
-        "slug": "이-문서는-작성중입니다",
-        "text": "이 문서는 작성중입니다"
-      }, {
-        "depth": 1,
-        "slug": "이-문서는-작성중입니다",
-        "text": "이 문서는 작성중입니다"
+        "depth": 4,
+        "slug": "약간-심화내용",
+        "text": "약간 심화내용"
       }],
-      "source": "\n# 이 문서는 작성중입니다\ntest \n# 이 문서는 작성중입니다",
-      "html": "<h1 id=\"이-문서는-작성중입니다\">이 문서는 작성중입니다</h1>\n<p>test</p>\n<h1 id=\"이-문서는-작성중입니다-1\">이 문서는 작성중입니다</h1>"
+      "source": "\nQ. 피닉스란 무엇인가?\\\nA. 피닉스는 엘릭서의 웹서버 프레임워크 이다\\\n\\\nQ. 피닉스는 누가 만들었나?\\\nA. 피닉스는 크리스 맥코드가 만들었다. 그는 원래 루비온레일즈로 개발하던 서버 개발자였다. 그는 레일즈에서 `서버기반 상태관리`를 하고 싶었고 실제로 라이브러리까지 만들어가면서 방법을 연구했다. 하지만 루비라는 언어 및 레일즈라는 프레임워크가 제공하는 동시성 수준으로는 한계가 있었고 여러 상황에서 제대로 작동하지 않았던 것이다. 그는 결국 루비온레일즈를 떠났고 높은 수준의 동시성을 제공해주는 환경을 찾다가 결국 엘릭서 생태계로 이전한다. 그리고 나서 결국 웹서버 프레임워크인 피닉스를 만들게 된 것이다.\\\n[출처 : 해커뉴스 rkangel](https://news.ycombinator.com/item?id=25105581)\\\n\\\nQ. 피닉스는 어떤 특징이 있는가?\\\nA. 위에서 언급했던 대로 피닉스는 `서버기반 상태관리`를 하려다가 좌절한 개발자가 만든 웹 프레임워크다. 따라서 `서버기반 상태관리` 기능을 제공한다. 이를 피닉스 라이브뷰라고 한다\\\n\\\nQ. 웹페이지에서 페이지의 상태를 관리하는 기능은 리액트나 뷰 등의 UI 프레임워크가 제공하던 기능이 아닌가 ?\\\nA. 그렇다. 하지만 리액트나 뷰 등을 사용하는 것은 너무 많은 지식을 필요로 한다. 기술이 빠르게 바뀌고 새로운 라이브러리가 계속 등장하고 새로운 프레임워크도 계속 등장한다. 이것을 계속 따라가는 것은 피곤한 일이다. 하지만 `서버기반 상태관리`에 의존하면 이런 기술들을 계속 쫒아갈 필요가 없다. 그저 엘릭서와 피닉스에 대한 지식만으로도 SPA 웹사이트를 만들 수 있는 것이다. 자바스크립트를 단 한줄도 작성할 필요가 없다\\\n\\\nQ. 라이브뷰가 어떤 방식으로 `서버기반 상태관리 기능`을 제공하길래 자바스크립트를 한 줄도 작성할 필요가 없는가?\\\nA. 라이브뷰는 두가지로 이루어진다. 먼저 `템플릿 기반의 html 코드`이다. 이것은 다른 프레임워크도 흔하게 제공하는 기능이다. 두번째로 `이벤트 처리기`이다. 이벤트 처리기란 웹소켓을 통하여 클라이언트와 서버가 교신하는 모델이다. 클라이언트에게 이벤트가 발생하면 그 이벤트는 서버로 전송된다. 서버는 그 이벤트를 받아서 현재 `서버에 저장된 상태를 기준으로` 재랜더링(re-render)을 수행한다. 재랜더링을 수행하는 과정에서 diff알고리즘으로 이전 랜더링과의 차이점을 분석하고 변경된 사항만을 클라이언트에게 전송한다. 이것이 라이브뷰의 핵심이다\\\n\\\nQ. 서버가 상태를 가지고 있고 렌더링도 수행한다면 이건 `서버에서 작동하는 리액트`가 아닌가?\\\nA. 그렇게 볼 수도 있다. 다만 소위 말하는 `서버에서 작동하는 리액트`를 구현하기 위해 당신은 자바스크립트를 사용할 필요가 없다. 당연하게도 피닉스 프레임워크는 자바스크립트 기반으로 작동하는 서버가 아닌 엘릭서 기반의 서버이기 때문이다. 따라서 당신은 엘릭서와 자바스크립트 두가지 언어를 모두 알 필요가 없으며 엘릭서만 알아도 클라와 서버를 모두 만들 수 있다.\\\n\\\nQ. 클라이언트에서 이벤트가 발생할 때마다 서버에게 메시지를 보낸다면 서버에 너무 과부하가 몰리는 건 아닌가 ?\\\nA. 맞는 말이다. 수십만 수백만 클라이언트와 웹소켓으로 연결되어 실시간으로 메시지가 오간다면 이는 필연적으로 과부하를 야기한다. 하지만 피닉스는 엘릭서 기반이고 엘릭서는 높은 수준의 병렬성을 제공한다. 엘릭서의 창시자 호세 발림에 의하면 그는 루비온레일즈로 100개의 서버가 필요했던 환경에서 엘릭서로 이전하고 난 뒤에는 2개의 서버 만으로 감당할 수 있었다고 한다. 이렇게 극적으로 서버 갯수를 줄일 수 있었던 배경에는 엘릭서가 제공하는 높은 수준의 동시성이 있었기 때문이다.\\\n\\\nQ. `서버기반 상태관리`를 제공하는 프레임워크가 피닉스 뿐인가?\\\nA. 아니다. 웬만한 언어별로 `서버기반 상태관리` 라이브러리가 있다. 자세한 내용은 [여기](https://github.com/dbohdan/liveviews)에서 참조할 수 있다\\\n\\\nQ. 그렇다면 굳이 피닉스 프레임워크를 고집할 이유가 없는 것인가?\\\nA. 엄밀히 말하면 `서버기반 상태관리`는 엘릭서만의 전유물은 아니다. 하지만 위에서 말했듯이 엘릭서의 엑터 모델은 모든 언어를 통틀어 최고수준의 동시성을 보장한다. 따라서 서버기반 상태관리에 최적화 되어있는 언어라고 볼 수 있을것이다.\\\n\\\nQ. `서버기반 상태관리`외에 피닉스의 장점이 있는가?\\\nA. 그렇다. 피닉스는 PubSub모델을 제공한다\\\n\\\nQ. PubSub 모델이 뭔가?\\\nA. 어떤 클러스터 내에 누가 접속했고 누가 연결을 끊었는지 알수있는 매커니즘이라고 한다\\\n\\\nQ. 그게 왜 좋은가?\\\nA. 분산 컴퓨팅을 할 수 있기 때문이다. 어떤 서버에서 hello_world라는 함수를 실행하도록 요청받았는데 그런 함수가 구현되어 있지 않다면? 클러스터 내에 연결되어 있는 다른 노드에 대신 수행해 달라고 요청하면 된다. 다시말해 피닉스는 분산 컴퓨팅에 특화되어 있다\n\n---\n\n#### 약간 심화내용\n\nQ. 라이브뷰는 구체적으로 어떻게 구현되었는가 ?\\\nA. 먼저 라이브뷰가 비헤이비어 라는것을 이해해야 한다. 비헤이비어가 낮설다면 일종의 추상 클래스라고 이해해도 좋다. 비헤이비어는 특정한 함수들을 구현할 것을 강제하는데 이런 함수들을 함수 시그니처에 맞추어 구현하는 것이 비헤이비어의 존재 의의이다. 따라서 비헤이비어를 일종의 인터페이스라고 이해해도 좋다. 이렇게 구현된 함수들은 하나의 웹페이지에서 페이지의 상태를 관리하고 렌더링을 수행한다\\\n\\\nQ. 라이브뷰가 비헤이비어이고 비헤이비어가 특정 함수의 구현을 강제하는 것은 알겠다. 그러면 라이브뷰는 어떤 함수의 구현을 강제하는가?\\\nA. 라이브뷰는 웹소켓 기반의 메시지 통신을 구현할 것을 강제한다. 왜냐하면 클라이언트가 서버에게 이벤트의 발생을 알릴 때 웹소켓을 사용하기 때문이다\\\n",
+      "html": "<p>Q. 피닉스란 무엇인가?<br>\nA. 피닉스는 엘릭서의 웹서버 프레임워크 이다<br>\n<br>\nQ. 피닉스는 누가 만들었나?<br>\nA. 피닉스는 크리스 맥코드가 만들었다. 그는 원래 루비온레일즈로 개발하던 서버 개발자였다. 그는 레일즈에서 <code>서버기반 상태관리</code>를 하고 싶었고 실제로 라이브러리까지 만들어가면서 방법을 연구했다. 하지만 루비라는 언어 및 레일즈라는 프레임워크가 제공하는 동시성 수준으로는 한계가 있었고 여러 상황에서 제대로 작동하지 않았던 것이다. 그는 결국 루비온레일즈를 떠났고 높은 수준의 동시성을 제공해주는 환경을 찾다가 결국 엘릭서 생태계로 이전한다. 그리고 나서 결국 웹서버 프레임워크인 피닉스를 만들게 된 것이다.<br>\n<a href=\"https://news.ycombinator.com/item?id=25105581\">출처 : 해커뉴스 rkangel</a><br>\n<br>\nQ. 피닉스는 어떤 특징이 있는가?<br>\nA. 위에서 언급했던 대로 피닉스는 <code>서버기반 상태관리</code>를 하려다가 좌절한 개발자가 만든 웹 프레임워크다. 따라서 <code>서버기반 상태관리</code> 기능을 제공한다. 이를 피닉스 라이브뷰라고 한다<br>\n<br>\nQ. 웹페이지에서 페이지의 상태를 관리하는 기능은 리액트나 뷰 등의 UI 프레임워크가 제공하던 기능이 아닌가 ?<br>\nA. 그렇다. 하지만 리액트나 뷰 등을 사용하는 것은 너무 많은 지식을 필요로 한다. 기술이 빠르게 바뀌고 새로운 라이브러리가 계속 등장하고 새로운 프레임워크도 계속 등장한다. 이것을 계속 따라가는 것은 피곤한 일이다. 하지만 <code>서버기반 상태관리</code>에 의존하면 이런 기술들을 계속 쫒아갈 필요가 없다. 그저 엘릭서와 피닉스에 대한 지식만으로도 SPA 웹사이트를 만들 수 있는 것이다. 자바스크립트를 단 한줄도 작성할 필요가 없다<br>\n<br>\nQ. 라이브뷰가 어떤 방식으로 <code>서버기반 상태관리 기능</code>을 제공하길래 자바스크립트를 한 줄도 작성할 필요가 없는가?<br>\nA. 라이브뷰는 두가지로 이루어진다. 먼저 <code>템플릿 기반의 html 코드</code>이다. 이것은 다른 프레임워크도 흔하게 제공하는 기능이다. 두번째로 <code>이벤트 처리기</code>이다. 이벤트 처리기란 웹소켓을 통하여 클라이언트와 서버가 교신하는 모델이다. 클라이언트에게 이벤트가 발생하면 그 이벤트는 서버로 전송된다. 서버는 그 이벤트를 받아서 현재 <code>서버에 저장된 상태를 기준으로</code> 재랜더링(re-render)을 수행한다. 재랜더링을 수행하는 과정에서 diff알고리즘으로 이전 랜더링과의 차이점을 분석하고 변경된 사항만을 클라이언트에게 전송한다. 이것이 라이브뷰의 핵심이다<br>\n<br>\nQ. 서버가 상태를 가지고 있고 렌더링도 수행한다면 이건 <code>서버에서 작동하는 리액트</code>가 아닌가?<br>\nA. 그렇게 볼 수도 있다. 다만 소위 말하는 <code>서버에서 작동하는 리액트</code>를 구현하기 위해 당신은 자바스크립트를 사용할 필요가 없다. 당연하게도 피닉스 프레임워크는 자바스크립트 기반으로 작동하는 서버가 아닌 엘릭서 기반의 서버이기 때문이다. 따라서 당신은 엘릭서와 자바스크립트 두가지 언어를 모두 알 필요가 없으며 엘릭서만 알아도 클라와 서버를 모두 만들 수 있다.<br>\n<br>\nQ. 클라이언트에서 이벤트가 발생할 때마다 서버에게 메시지를 보낸다면 서버에 너무 과부하가 몰리는 건 아닌가 ?<br>\nA. 맞는 말이다. 수십만 수백만 클라이언트와 웹소켓으로 연결되어 실시간으로 메시지가 오간다면 이는 필연적으로 과부하를 야기한다. 하지만 피닉스는 엘릭서 기반이고 엘릭서는 높은 수준의 병렬성을 제공한다. 엘릭서의 창시자 호세 발림에 의하면 그는 루비온레일즈로 100개의 서버가 필요했던 환경에서 엘릭서로 이전하고 난 뒤에는 2개의 서버 만으로 감당할 수 있었다고 한다. 이렇게 극적으로 서버 갯수를 줄일 수 있었던 배경에는 엘릭서가 제공하는 높은 수준의 동시성이 있었기 때문이다.<br>\n<br>\nQ. <code>서버기반 상태관리</code>를 제공하는 프레임워크가 피닉스 뿐인가?<br>\nA. 아니다. 웬만한 언어별로 <code>서버기반 상태관리</code> 라이브러리가 있다. 자세한 내용은 <a href=\"https://github.com/dbohdan/liveviews\">여기</a>에서 참조할 수 있다<br>\n<br>\nQ. 그렇다면 굳이 피닉스 프레임워크를 고집할 이유가 없는 것인가?<br>\nA. 엄밀히 말하면 <code>서버기반 상태관리</code>는 엘릭서만의 전유물은 아니다. 하지만 위에서 말했듯이 엘릭서의 엑터 모델은 모든 언어를 통틀어 최고수준의 동시성을 보장한다. 따라서 서버기반 상태관리에 최적화 되어있는 언어라고 볼 수 있을것이다.<br>\n<br>\nQ. <code>서버기반 상태관리</code>외에 피닉스의 장점이 있는가?<br>\nA. 그렇다. 피닉스는 PubSub모델을 제공한다<br>\n<br>\nQ. PubSub 모델이 뭔가?<br>\nA. 어떤 클러스터 내에 누가 접속했고 누가 연결을 끊었는지 알수있는 매커니즘이라고 한다<br>\n<br>\nQ. 그게 왜 좋은가?<br>\nA. 분산 컴퓨팅을 할 수 있기 때문이다. 어떤 서버에서 hello_world라는 함수를 실행하도록 요청받았는데 그런 함수가 구현되어 있지 않다면? 클러스터 내에 연결되어 있는 다른 노드에 대신 수행해 달라고 요청하면 된다. 다시말해 피닉스는 분산 컴퓨팅에 특화되어 있다</p>\n<hr>\n<h4 id=\"약간-심화내용\">약간 심화내용</h4>\n<p>Q. 라이브뷰는 구체적으로 어떻게 구현되었는가 ?<br>\nA. 먼저 라이브뷰가 비헤이비어 라는것을 이해해야 한다. 비헤이비어가 낮설다면 일종의 추상 클래스라고 이해해도 좋다. 비헤이비어는 특정한 함수들을 구현할 것을 강제하는데 이런 함수들을 함수 시그니처에 맞추어 구현하는 것이 비헤이비어의 존재 의의이다. 따라서 비헤이비어를 일종의 인터페이스라고 이해해도 좋다. 이렇게 구현된 함수들은 하나의 웹페이지에서 페이지의 상태를 관리하고 렌더링을 수행한다<br>\n<br>\nQ. 라이브뷰가 비헤이비어이고 비헤이비어가 특정 함수의 구현을 강제하는 것은 알겠다. 그러면 라이브뷰는 어떤 함수의 구현을 강제하는가?<br>\nA. 라이브뷰는 웹소켓 기반의 메시지 통신을 구현할 것을 강제한다. 왜냐하면 클라이언트가 서버에게 이벤트의 발생을 알릴 때 웹소켓을 사용하기 때문이다\\</p>"
     },
-    "url": "/posts/test",
-    "file": new URL("file:///D:/project/%EB%A6%AC%EB%88%85%EC%8A%A4%ED%8F%B4%EB%8D%94/myblog_astro/src/pages/posts/test.md")
-  }
-}, children);
-
-});
-</script><astro-root uid="spECc"><div class="post-preview-container" data-reactroot=""><article class="post-preview"><style>
-
-                    .post-preview-container {
-                        border-radius : 1em ;
-                        border : solid 2px gray ;
-                        padding-bottom : 1em ;
-                        margin : 1em 0 1em 0 ;
-                    }
-
-                    .fadeout {
-                        animation : fadeout 1s
-                    }
-
-                    @keyframes fadeout {
-                        from { opacity: 1; }
-                        to   { opacity: 0; }
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color : inherit;
-                        position: relative;
-                        top: 0;
-                        transition: top ease 0.5s;
-                    }
-
-                    a:hover {
-                        top: -0.3rem;
-                    }
-                </style><header><a href="/posts/test2"><p class="title">[작성중] test</p></a></header><a href="/posts/test2">test</a></article></div></astro-root>
-<script type="module">
-import setup from '/_astro_frontend/hydrate/load.js';
-setup("spECc", {}, async () => {
-  
-  const [{ default: Component }, { default: hydrate }] = await Promise.all([import("/_astro/src/components/BlogPostPreviewReact.js"), import("/_snowpack/pkg/@astrojs.renderer-react.client.v0.2.0.js")]);
-  return (el, children) => hydrate(el)(Component, {
-  "post": {
-    "title": "[작성중] test",
-    "description": "test",
-    "astro": {
-      "headers": [{
-        "depth": 1,
-        "slug": "이-문서는-작성중입니다",
-        "text": "이 문서는 작성중입니다"
-      }, {
-        "depth": 1,
-        "slug": "이-문서는-작성중입니다",
-        "text": "이 문서는 작성중입니다"
-      }],
-      "source": "\n# 이 문서는 작성중입니다\ntest \n# 이 문서는 작성중입니다",
-      "html": "<h1 id=\"이-문서는-작성중입니다\">이 문서는 작성중입니다</h1>\n<p>test</p>\n<h1 id=\"이-문서는-작성중입니다-1\">이 문서는 작성중입니다</h1>"
-    },
-    "url": "/posts/test2",
-    "file": new URL("file:///D:/project/%EB%A6%AC%EB%88%85%EC%8A%A4%ED%8F%B4%EB%8D%94/myblog_astro/src/pages/posts/test2.md")
+    "url": "/posts/phoenix_qna",
+    "file": new URL("file:///mnt/mx500-234g/project/%EB%A6%AC%EB%88%85%EC%8A%A4%ED%8F%B4%EB%8D%94/myblog_astro/src/pages/posts/phoenix_qna.md")
   }
 }, children);
 
