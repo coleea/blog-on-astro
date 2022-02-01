@@ -1,20 +1,14 @@
 ---
-import BlogPostPreviewReact from '../../components/BlogPostPreviewReact.jsx';
+// import BlogPostPreviewReact from '../../components/BlogPostPreviewReact.jsx';
 
-// const koreanRegex = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/ ;
 const koreanRegex = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/  ;
-const allPosts = Astro.
-        fetchContent('../posts/*.md').
-        filter(p => !(/[가-힣]/.test(p.title))  ).
-        sort((a, b) => new Date(b.publishDate) - new Date(a.publishDate));
-
-// console.log(Astro.fetchContent('../posts/*.md'));
-
-// const allPosts = [] ;
+/* 
+const allPosts = Astro.fetchContent('../posts/*.md').
+                        // filter(p => !(/[가-힣]/.test(p.title))  ).
+                        sort((a, b) => new Date(b.publishDate).getDate() - new Date(a.publishDate).getDate());
+*/
 ---
-
-    <div>
-        i am en page
-        {allPosts.map(p => <BlogPostPreviewReact:load post={p} />)}
-
-    </div>
+<div>
+    i am en page
+    <!-- {allPosts.map(p => <BlogPostPreviewReact client:load title={p.title} url={p.url} publishDate={p.publishDate}  />)} -->
+</div>

@@ -108,6 +108,7 @@ body {
   /* background: var(--theme-bg); */
   /* background: var(--theme-bg); */
   color: var(--theme-text);
+  background: rgb(240, 240, 240);
 }
 
 
@@ -137,10 +138,12 @@ body {
     border-radius: 1em;
     padding: 0 1.5em 0 1.5em ;
     margin : 2em 0 0 0 ;
-    border :solid 1px;
-    box-shadow: -1em 0 .4em olive;
+    /* border :1px solid ; */
+    border :0px solid ;
+    /* box-shadow: -1em 0 .4em olive; */
     overflow: hidden;
     /* max-width: 100%; */
+    background: #fff;
   }
 
   .goHome {
@@ -196,11 +199,15 @@ nav ul {
 }
 
 h1 {
-  font-size: clamp(2.488rem, 1.924rem + 1.41vw, 3.052rem);
+  font-size: 2.3rem;
+  font-weight: bold;
+  /* font-size: clamp(2.488rem, 1.924rem + 1.41vw, 3.052rem); */
 }
 
 h2 {
-  font-size: clamp(2.074rem, 1.707rem + 0.9175vw, 2.441rem);
+  font-size: 2.3rem;
+  font-weight: bold;
+  /* font-size: clamp(2.074rem, 1.707rem + 0.9175vw, 2.441rem); */
 }
 
 h3 {
