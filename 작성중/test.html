@@ -1,0 +1,72 @@
+
+<script>
+    alert('after head')
+</script>
+
+<head>
+	<!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" as="font" crossorigin="anonymous" > -->
+
+		<!-- 1순위 -->
+	<link rel="stylesheet" href="https://ssl.pstatic.net/sstatic/search/pc/css/sp_autocomplete_210318.css">
+
+		<!-- 2위 -->
+	<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/tveta/libs/assets/css/pc/main/min/main_topic_darkmode.min.css?20200601">
+
+		<!-- 3위 -->
+	<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/tveta/libs/assets/css/pc/main/min/rollingboard_imagerolling_350.min.css?20180427">
+
+<!-- highest -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" /> -->
+
+	<link rel="preload" as="script" href="https://ssl.pstatic.net/share/js/naver_sharebutton.js">
+	<!-- <link rel="preload" href="https://unpkg.com/react@17/umd/react.development.js" as="script" crossorigin="anonymous" /> -->
+
+	<link rel="preload" as="image" href="https://ssl.pstatic.net/static/pwe/nm/bn/bn_login_02_150128.png">
+	<link rel="preload" as="image" href="https://ssl.pstatic.net/static/blank.gif">
+	<link rel="preload" as="image" href="https://ssl.pstatic.net/static/common/gnb/one/sp_gnb_v14.png">
+	<link rel="preload" as="image" href="https://ssl.pstatic.net/mimgnews/image/420/2018/07/17/093447877_09.TY-01.jpg">
+
+
+
+	<!-- 4위. 이게 밑의 css보다 순위가 높다 ? -->
+
+	<!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" as="font" crossorigin="anonymous" > -->
+
+	<!-- <link href="www.daum.com" rel="stylesheet"> -->
+	<!-- <link href="www.google.com" rel="stylesheet"> -->
+	<!-- <link href="www.ms.com" rel="stylesheet"> -->
+	<!-- <link href="www.naver.com" rel="script"> -->
+</head>
+
+
+
+
+<body>
+
+<style>
+body {
+	  /* font-family: Noto Sans KR ; */
+
+}
+</style>
+
+<div id='test'>
+	
+</div>
+
+<script>
+    alert('hi1')
+    var test = document.getElementById('test');
+    test.innerHTML = '<h1>Hello World</h1>';
+    document.addEventListener('DOMContentLoaded', ()=> alert('DOMContentLoaded'))
+
+    alert('hi2')
+	window.onload = function (){
+		alert(`onload`)
+	}
+</script>
+
+<div id='test2'>
+</div>
+
+</body>

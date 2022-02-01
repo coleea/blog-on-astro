@@ -1,0 +1,85 @@
+
+:root {
+    font-size : 1rem ;    
+    /* font-weight : 500 ; */
+}
+
+.aboutMeWrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* padding: 2em 0 2em 0; */
+    padding: 0 0 0 .3em;
+    border: 0;
+    background: #fff;
+    /* border : solid 1px gray ; */
+    /* border-radius: 2em; */
+}
+
+.title {
+    font-family: Founders Grotesk,Arial Black,sans-serif;
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+body {
+    font-family: Noto Sans KR ;
+    margin : 0 ;
+    padding: 0;
+    background: rgb(230, 230, 230);
+}
+
+
+table {
+    margin : 0 auto 0 auto ;
+    font-size : 1rem ;
+    font-weight : 500 ;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+}
+
+ul {
+    /* list-style-type: none; */
+    /* padding: 0 0 2em 0; */
+}
+
+li {
+    padding: 0 0 1em 0;
+}
+
+.bannerTitle {
+    /* font-size: 1.2rem; */
+}
+
+button {
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+}
+
+.table {
+    margin-top: 30px;
+}
+
+@media (min-width: 500px){
+
+    :root {
+        font-size : 1.3rem ;
+    }
+
+    .aboutMeWrapper {
+        max-width: 700px;
+        border: 0px solid;
+        border-radius: 1em ;
+        border-color: gray;
+        padding: 1em 2em 1em 2em ;
+        box-shadow: -1em 0 .4em olive;
+        margin-top : 50px ;
+        /* paddin: 1em 0 0 0; */
+        /* margin: 0 auto; */
+    }
+}

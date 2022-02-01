@@ -1,0 +1,128 @@
+:root {
+    /* font-size : 1.5rem; */
+    /* font-size : 2rem; */
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.fadeout {
+    animation : fadeout 1s
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    /* font-size : .5em ; */
+}
+
+.post-description {
+    font-size : .8em ;
+    /* font-weight: 600 ; */
+}
+
+a:hover {
+    top: -0.3rem;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+footer {
+    margin: auto;
+    font-size: .7em;
+}
+
+a {
+    text-decoration: none;
+    color : inherit;
+}
+
+.publish-date{
+    text-align: right;
+}
+
+.description {
+    text-indent: 10%;
+}
+
+.link {
+    margin: auto;
+}
+
+.post-preview-container {
+    border-radius : 1em ;
+    border : solid 2px gray ;
+    padding : 0 .5em 1em .5em;
+    /* padding-bottom : 1em ; */
+    margin : 1em 0 1em 0 ;
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 500px;
+    margin : auto ;
+    padding: 0em 1.5em 2em 1.5em ;
+}
+
+time {
+    float: right;
+    font-size: .7rem;
+    padding : 0 0 0 0;
+}
+
+@media(min-width : 500px) {
+
+    :root {
+        /* font-size : 1.5rem; */
+        /* font-size : 2rem; */
+        font-size: 1.5rem;
+    }
+
+    body {
+        /* font-size: 1.5rem; */
+        background: rgb(233, 233, 233);
+    }
+
+    .wrapper {
+        text-align: center;
+        max-width: 700px;
+        margin : auto ;
+        border-radius: 1em;
+        padding: .3em 1.5em 2em 1.5em ;
+        /* margin : 2em 0 0 0 ; */
+        border :solid 1px rgb(235, 235, 235);
+        box-shadow: 1em 0 .4em olive;
+        font-size: 1.2em;
+        background: #fff;
+    }
+
+    .post-preview-container {
+        border-radius : 1em ;
+        background: rgb(240, 240, 240) ;
+        border : 0px solid gray ;
+        padding : 0.5em 2em 2em 2em;
+        font-weight: bold;
+        /* padding-bottom : 1em ; */
+        margin : 1em 0 1em 0 ;
+        text-align: left;
+    }
+}
+

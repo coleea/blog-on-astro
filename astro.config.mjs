@@ -12,7 +12,5 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   // renderers: ['@astrojs/renderer-preact'],
   renderers: [
     '@astrojs/renderer-react', 
-    '@astrojs/renderer-vue', 
-  '@astrojs/renderer-svelte',
-'@astrojs/renderer-solid'],
+  ],
 });

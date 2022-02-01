@@ -1,0 +1,27 @@
+---
+import { Markdown } from 'astro/components';
+import BaseHead from '../components/BaseHead.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+import BlogPost from '../components/BlogPost.astro';
+
+const {content} = Astro.props;
+const {title, description, publishDate, author, heroImage, permalink, alt} = content;
+---
+
+<html lang={ content.lang || 'ko' }>
+  <head>
+    <link rel="stylesheet" href="/blog.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  
+    <BlogPost title={title} author={author} heroImage={heroImage} publishDate={publishDate} alt={alt}>
+        <slot />
+    </BlogPost>
+    <a class='goHome' href='/'>111 [ 홈으로 ]</a>
+  </body>
+</html>
+
