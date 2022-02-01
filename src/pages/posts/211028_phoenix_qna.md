@@ -9,7 +9,7 @@ layout: '../../components/pages/post/BlogPost.astro'
 
 ---
 
-### 엘릭서의 피닉스 프레임워크 FAQ
+# 엘릭서의 피닉스 프레임워크 FAQ
 
 Q. 피닉스란 무엇인가?\
 A. 피닉스는 엘릭서의 웹서버 프레임워크 이다\

@@ -9,7 +9,7 @@ layout: '../../components/pages/post/BlogPost.astro'
 
 ---
 
-## 프로젝트 룸(Project Loom)이란 무엇인가?
+# 프로젝트 룸(Project Loom)이란 무엇인가?
 
 프로젝트 룸 (project loom)은 JVM 가상머신 기반의 스케줄링 메커니즘을 새로 구현하는 프로젝트이다. 얼랭(erlang)과 마찬가지로 동시성 패턴의 최적화를 목표로 한다\
 \

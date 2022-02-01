@@ -9,7 +9,7 @@ layout: '../../components/pages/post/BlogPost.astro'
 
 ---
 
-### 리액트의 css패턴 Q&A 모음
+# 리액트의 css패턴 Q&A 모음
 
 #### Q. css-in-js가 무엇인가?
 

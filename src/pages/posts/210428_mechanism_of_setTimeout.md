@@ -8,7 +8,7 @@ publishDate: '2021.04.29'
 layout: '../../components/pages/post/BlogPost.astro'
 ---
 
-### 크로미움 웹브라우저에서 setTimeout이 실행되는 과정
+# 크로미움 웹브라우저에서 setTimeout이 실행되는 과정
 
 아래 코드는 setTimeout을 호출하는 코드이다
 

@@ -9,7 +9,7 @@ layout: '../../components/pages/post/BlogPost.astro'
 
 ---
 
-## [html 최적화] preload, prefetch 등에 대하여
+# [html 최적화] preload, prefetch 등에 대하여
 
 먼저 쉬운 이야기부터 하자
 

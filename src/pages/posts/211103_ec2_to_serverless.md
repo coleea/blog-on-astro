@@ -9,7 +9,7 @@ layout: '../../components/pages/post/BlogPost.astro'
 
 ---
 
-### ec2에서 서버리스로의 교체기
+# ec2에서 서버리스로의 교체기
 
 ### 요약
 1. (많은 경우) 람다는 ec2보다 싸다
