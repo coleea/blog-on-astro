@@ -3,7 +3,7 @@ title: '자바진영의 프로젝트 룸(Project Loom)이란 무엇인가?'
 description: "JVM기반의 스케줄링 모델"
 publishDate: '2021.11.12'
 # author: 'lkb'
-# heroImage: ''
+heroImage: '/blogPreview/project_loom.jpg'
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

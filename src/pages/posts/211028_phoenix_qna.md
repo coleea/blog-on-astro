@@ -3,7 +3,7 @@ title: '엘릭서의 피닉스 프레임워크 FAQ'
 description: "피닉스 프레임워크에 대해 흔하게 물어보는 질문들과 그 답변들"
 publishDate: '2021.11.03'
 # author: 'lkb'
-# heroImage: ''
+heroImage: '/blogPreview/phoenix_logo.png'
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

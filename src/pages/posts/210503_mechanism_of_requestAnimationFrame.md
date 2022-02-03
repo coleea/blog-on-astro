@@ -4,6 +4,8 @@ description: "rAF API의 작동과정"
 publishDate: '2021.05.03'
 # author: 'lkb'
 # heroImage: ''
+heroImage: '/blogPreview/Chromium_logo.png'
+
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

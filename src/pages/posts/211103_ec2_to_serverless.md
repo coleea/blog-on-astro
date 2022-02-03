@@ -3,7 +3,8 @@ title: "ec2에서 서버리스로의 교체기"
 description: "요금과 콜드스타트의 관점에서"
 publishDate: '2021.11.03'
 # author: 'lkb'
-# heroImage: ''
+heroImage: '/blogPreview/aws_lambda_logo.png'
+
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

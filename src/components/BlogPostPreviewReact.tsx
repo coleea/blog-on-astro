@@ -1,6 +1,6 @@
  import React from 'react'
 
-export default ({title, url, publishDate}) => {
+export default ({title, url, publishDate, heroImage}) => {
 
     // console.log('3, post', post)
 
@@ -12,7 +12,9 @@ export default ({title, url, publishDate}) => {
         <div className='post-preview-container'>
             <article className="post-preview">
                 <div className="heroImgWrapper" style={{float:'left' }}>
-                    <img className="heroImgWrapper" style={{borderRadius : '1em', marginRight : '20px'}} src="./empty.jpg" width="160px" height="160px"></img>
+                    <img className="heroImgWrapper" 
+                        style={{borderRadius : '1em', marginRight : '20px'}} 
+                        src={heroImage ? heroImage : "./empty.jpg"}  width="160px" height="160px"></img>
                 </div>
                 <div>
                     <div clasName="titleWrapper" style={{height:"50%"}}>

@@ -5,6 +5,7 @@ publishDate: "2021.12.01"
 # author: 'lkb'
 # heroImage: ''
 # alt: 'Astro'
+heroImage: '/blogPreview/optimization_logo.jpg'
 layout: '../../components/pages/post/BlogPost.astro'
 
 ---

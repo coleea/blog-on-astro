@@ -3,7 +3,7 @@ title: '리액트의 css패턴 Q&A 모음'
 description: ""
 publishDate: '2021.11.10'
 # author: 'lkb'
-# heroImage: ''
+heroImage: '/blogPreview/css_icon.png'
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

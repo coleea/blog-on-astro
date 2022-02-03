@@ -4,6 +4,8 @@ description: "preload, prefetch, prerender, pre어쩌고"
 publishDate: "2021.11.17"
 # author: 'lkb'
 # heroImage: ''
+heroImage: '/blogPreview/html_logo.gif'
+
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

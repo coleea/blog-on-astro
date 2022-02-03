@@ -4,6 +4,7 @@ description: "상태를 저장하는 함수"
 publishDate: '2021.05.05'
 # author: 'lkb'
 # heroImage: ''
+heroImage: '/blogPreview/js_logo.png'
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 

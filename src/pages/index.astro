@@ -20,7 +20,7 @@ const allPosts = Astro.fetchContent('./posts/*.md')
   <body>
       <div class='wrapper'>
           <img loading="lazy" id='logo' src="/icon_blog.png" height="150px" />
-          {allPosts.map(p => <BlogPostPreviewReact client:load title={p.title} url={p.url} publishDate={p.publishDate}  />)}
+          {allPosts.map(p => <BlogPostPreviewReact client:load title={p.title} url={p.url} publishDate={p.publishDate} heroImage={p.heroImage} />)}
           <Footer/>
       </div>
       <div>

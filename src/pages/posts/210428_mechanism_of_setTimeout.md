@@ -4,6 +4,8 @@ description: "setTimeout API의 작동방식"
 publishDate: '2021.04.29'
 # author: 'lkb'
 # heroImage: ''
+heroImage: '/blogPreview/Chromium_logo.png'
+
 # alt: 'Astro'
 layout: '../../components/pages/post/BlogPost.astro'
 ---
