@@ -13,4 +13,13 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   renderers: [
     '@astrojs/renderer-react', 
   ],
+  markdownOptions : {
+    render : [
+      '@astrojs/markdown-remark',
+      {
+        remarkPlugins : [],
+        rehypePlugins : []
+      }
+    ]
+  }
 });

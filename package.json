@@ -13,6 +13,7 @@
     "astro": "^0.22.20"
   },
   "dependencies": {
+    "@astrojs/prism": "^0.4.0",
     "github-markdown-css": "^5.0.0"
   }
 }

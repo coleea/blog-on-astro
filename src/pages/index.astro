@@ -23,5 +23,7 @@ const allPosts = Astro.fetchContent('./posts/*.md')
           {allPosts.map(p => <BlogPostPreviewReact client:load title={p.title} url={p.url} publishDate={p.publishDate}  />)}
           <Footer/>
       </div>
+      <div>
+      </div>
   </body>
 </html>

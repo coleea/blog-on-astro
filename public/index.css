@@ -77,13 +77,13 @@ a {
 
 .wrapper {
     text-align: center;
-    max-width: 500px;
+    /* max-width: 500px; */
     margin : auto ;
     padding: 0em 1.5em 2em 1.5em ;
 }
 
 time {
-    float: right;
+    /* float: right; */
     font-size: .7rem;
     padding : 0 0 0 0;
 }
@@ -103,7 +103,7 @@ time {
 
     .wrapper {
         text-align: center;
-        max-width: 700px;
+        max-width: 800px;
         margin : auto ;
         border-radius: 1em;
         padding: .3em 1.5em 2em 1.5em ;
@@ -118,11 +118,24 @@ time {
         border-radius : 1em ;
         background: rgb(240, 240, 240) ;
         border : 0px solid gray ;
-        padding : 0.5em 2em 2em 2em;
+        padding : 0.5em 1em 2em 1em;
         font-weight: bold;
         /* padding-bottom : 1em ; */
         margin : 1em 0 1em 0 ;
-        text-align: left;
+
+    }
+    .post-preview {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        text-align: left;        
     }
 }
 
+.heroImgWrapper {
+    position: relative;
+    top : 18px ;
+}
+
+.timeWrapper {
+    text-align: right;
+}

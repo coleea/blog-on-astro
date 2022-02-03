@@ -39,7 +39,7 @@ layout: '../../components/pages/post/BlogPost.astro'
 \
 다음으로 콜드스타트에 눈길이 갔다. 먼저 이 콜드스타트가 구체적으로 얼마나 시간을 잡아먹는지 알고 싶었다. 그래서 아무런 기능이 없이 그저 빈 객체를 리턴하는 API 엔드포인트를 만들었다. 아래와 같다
 
-```javascript
+```typescript
 export default EmptyFunction(req, res){
   res.json({})
 }
